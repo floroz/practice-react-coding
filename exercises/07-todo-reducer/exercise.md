@@ -60,6 +60,7 @@ Build a feature-rich todo application using `useReducer` instead of `useState`. 
 ## Why useReducer?
 
 This exercise demonstrates when `useReducer` is better than `useState`:
+
 - Multiple related state values
 - Complex state transitions
 - State depends on previous state
@@ -74,19 +75,18 @@ interface Todo {
   text: string;
   completed: boolean;
   createdAt: number;
-  priority?: 'high' | 'medium' | 'low';
+  priority?: "high" | "medium" | "low";
 }
 
 interface State {
   todos: Todo[];
-  filter: 'all' | 'active' | 'completed';
-  sort: 'date-desc' | 'date-asc' | 'alpha';
+  filter: "all" | "active" | "completed";
+  sort: "date-desc" | "date-asc" | "alpha";
 }
 
 type Action =
-  | { type: 'ADD_TODO'; payload: { text: string } }
-  | { type: 'TOGGLE_TODO'; payload: { id: string } }
-  | { type: 'DELETE_TODO'; payload: { id: string } }
-  // ... more actions
+  | { type: "ADD_TODO"; payload: { text: string } }
+  | { type: "TOGGLE_TODO"; payload: { id: string } }
+  | { type: "DELETE_TODO"; payload: { id: string } };
+// ... more actions
 ```
-

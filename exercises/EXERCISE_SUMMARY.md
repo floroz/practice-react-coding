@@ -7,10 +7,11 @@ This repository contains 7 carefully crafted React interview exercises that prog
 ## Complete Exercise List
 
 ### ✅ Exercise 1: Counter with Undo/Redo
+
 - **File**: `01-counter-undo/`
 - **Time**: 15-20 minutes
 - **Difficulty**: Easy
-- **Concepts**: 
+- **Concepts**:
   - `useState` for state management
   - State history tracking
   - Array operations (push, pop, slice)
@@ -20,6 +21,7 @@ This repository contains 7 carefully crafted React interview exercises that prog
 ---
 
 ### ✅ Exercise 2: Custom Hooks
+
 - **File**: `02-custom-hooks/`
 - **Time**: 20-25 minutes
 - **Difficulty**: Easy-Medium
@@ -34,6 +36,7 @@ This repository contains 7 carefully crafted React interview exercises that prog
 ---
 
 ### ✅ Exercise 3: Dynamic Form Builder
+
 - **File**: `03-dynamic-form/`
 - **Time**: 25-30 minutes
 - **Difficulty**: Medium
@@ -48,6 +51,7 @@ This repository contains 7 carefully crafted React interview exercises that prog
 ---
 
 ### ✅ Exercise 4: Data Fetching with Suspense
+
 - **File**: `04-suspense-data/`
 - **Time**: 30-35 minutes
 - **Difficulty**: Medium
@@ -62,6 +66,7 @@ This repository contains 7 carefully crafted React interview exercises that prog
 ---
 
 ### ✅ Exercise 5: Search with useTransition
+
 - **File**: `05-search-transition/`
 - **Time**: 30-35 minutes
 - **Difficulty**: Medium
@@ -76,6 +81,7 @@ This repository contains 7 carefully crafted React interview exercises that prog
 ---
 
 ### ✅ Exercise 6: Performance Optimization
+
 - **File**: `06-performance/`
 - **Time**: 35-40 minutes
 - **Difficulty**: Medium-Hard
@@ -90,6 +96,7 @@ This repository contains 7 carefully crafted React interview exercises that prog
 ---
 
 ### ✅ Exercise 7: Todo App with useReducer
+
 - **File**: `07-todo-reducer/`
 - **Time**: 40-45 minutes
 - **Difficulty**: Medium-Hard
@@ -107,12 +114,14 @@ This repository contains 7 carefully crafted React interview exercises that prog
 ## Modern React Features Demonstrated
 
 ### React 18+ Features
+
 - ✅ `useTransition` for concurrent rendering
 - ✅ `useDeferredValue` for deferred updates
 - ✅ Suspense for data fetching
 - ✅ `useId` for stable unique IDs
 
 ### Core Hooks
+
 - ✅ `useState` for simple state
 - ✅ `useReducer` for complex state
 - ✅ `useEffect` for side effects
@@ -122,6 +131,7 @@ This repository contains 7 carefully crafted React interview exercises that prog
 - ✅ Custom hooks for reusable logic
 
 ### Patterns
+
 - ✅ Error Boundaries
 - ✅ Controlled components
 - ✅ Form validation
@@ -132,6 +142,7 @@ This repository contains 7 carefully crafted React interview exercises that prog
 - ✅ Resource wrappers
 
 ### TypeScript
+
 - ✅ Proper interface definitions
 - ✅ Generic types for hooks
 - ✅ Discriminated unions for reducers
@@ -139,6 +150,7 @@ This repository contains 7 carefully crafted React interview exercises that prog
 - ✅ Component prop typing
 
 ### Styling
+
 - ✅ CSS Modules for scoped styles
 - ✅ Responsive design
 - ✅ Dark theme
@@ -162,15 +174,12 @@ After completing these exercises, you should be comfortable with:
 ## Progression Path
 
 **Beginner → Intermediate**
+
 1. Counter with Undo/Redo (basics)
 2. Custom Hooks (reusability)
 3. Dynamic Form (real-world patterns)
 
-**Intermediate → Advanced**
-4. Suspense Data (modern async)
-5. Search Transition (concurrent features)
-6. Performance (optimization)
-7. Todo Reducer (complex state)
+**Intermediate → Advanced** 4. Suspense Data (modern async) 5. Search Transition (concurrent features) 6. Performance (optimization) 7. Todo Reducer (complex state)
 
 ## Success Metrics
 
@@ -193,4 +202,3 @@ You'll know you're ready when you can:
 5. **Build variations** - Apply patterns to new problems
 
 Good luck with your interviews! 🎯
-

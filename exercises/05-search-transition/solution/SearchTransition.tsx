@@ -40,13 +40,13 @@ const NOUNS = [
 function generateItems(count: number): Item[] {
   return Array.from({ length: count }, (_, i) => ({
     id: i,
-    name: `${ADJECTIVES[i % ADJECTIVES.length]} ${NOUNS[i % NOUNS.length]} ${i + 1}`,
+    name: `${ADJECTIVES[i % ADJECTIVES.length]} ${NOUNS[i % NOUNS.length]} ${String(i + 1)}`,
     category: CATEGORIES[i % CATEGORIES.length],
-    description: `This is a detailed description for item ${i + 1}. It contains various features and benefits that make it unique.`,
+    description: `This is a detailed description for item ${String(i + 1)}. It contains various features and benefits that make it unique.`,
   }));
 }
 
-function highlightText(text: string, query: string): JSX.Element {
+function highlightText(text: string, query: string): React.JSX.Element {
   if (!query) return <>{text}</>;
 
   const parts = text.split(new RegExp(`(${query})`, "gi"));
@@ -109,7 +109,9 @@ export default function SearchTransition() {
           className={styles.searchInput}
           placeholder="Search items..."
           value={query}
-          onChange={(e) => handleSearch(e.target.value)}
+          onChange={(e) => {
+            handleSearch(e.target.value);
+          }}
         />
 
         <div className={styles.stats}>

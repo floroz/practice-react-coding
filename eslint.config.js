@@ -30,6 +30,33 @@ export default defineConfig([
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+    rules: {
+      // Allow unused vars in starter files (they're templates)
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+        },
+      ],
+      // Allow non-null assertions (common in React with refs)
+      "@typescript-eslint/no-non-null-assertion": "off",
+      // Make button type warnings instead of errors
+      "react-dom/no-missing-button-type": "warn",
+    },
+  },
+  // Relax rules for starter files
+  {
+    files: ["**/starter/**/*.{ts,tsx}"],
+    rules: {
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-extraneous-class": "off",
     },
   },
 ]);

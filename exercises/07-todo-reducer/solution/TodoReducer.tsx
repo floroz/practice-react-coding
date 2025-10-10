@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect, useId } from "react";
+import React, { useReducer, useEffect } from "react";
 import styles from "./TodoReducer.module.css";
 
 interface Todo {
@@ -117,7 +117,6 @@ const initialState: State = {
 };
 
 export default function TodoReducer() {
-  const formId = useId();
   const [state, dispatch] = useReducer(todoReducer, initialState);
   const [inputValue, setInputValue] = React.useState("");
   const [priority, setPriority] = React.useState<"high" | "medium" | "low">(
@@ -129,9 +128,9 @@ export default function TodoReducer() {
     const saved = localStorage.getItem("todos");
     if (saved) {
       try {
-        const todos = JSON.parse(saved);
+        const todos = JSON.parse(saved) as Todo[];
         dispatch({ type: "LOAD_TODOS", payload: { todos } });
-      } catch (e) {
+      } catch (_error) {
         console.error("Failed to load todos");
       }
     }
@@ -195,12 +194,16 @@ export default function TodoReducer() {
           type="text"
           className={styles.input}
           value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
+          onChange={(e) => {
+            setInputValue(e.target.value);
+          }}
           placeholder="Add a new todo..."
         />
         <select
           value={priority}
-          onChange={(e) => setPriority(e.target.value as any)}
+          onChange={(e) => {
+            setPriority(e.target.value as "high" | "medium" | "low");
+          }}
           className={styles.prioritySelect}
         >
           <option value="low">Low</option>
@@ -214,25 +217,28 @@ export default function TodoReducer() {
         <div className={styles.filters}>
           <button
             className={`${styles.filterButton} ${state.filter === "all" ? styles.active : ""}`}
-            onClick={() =>
-              dispatch({ type: "SET_FILTER", payload: { filter: "all" } })
-            }
+            onClick={() => {
+              dispatch({ type: "SET_FILTER", payload: { filter: "all" } });
+            }}
           >
             All ({stats.total})
           </button>
           <button
             className={`${styles.filterButton} ${state.filter === "active" ? styles.active : ""}`}
-            onClick={() =>
-              dispatch({ type: "SET_FILTER", payload: { filter: "active" } })
-            }
+            onClick={() => {
+              dispatch({ type: "SET_FILTER", payload: { filter: "active" } });
+            }}
           >
             Active ({stats.active})
           </button>
           <button
             className={`${styles.filterButton} ${state.filter === "completed" ? styles.active : ""}`}
-            onClick={() =>
-              dispatch({ type: "SET_FILTER", payload: { filter: "completed" } })
-            }
+            onClick={() => {
+              dispatch({
+                type: "SET_FILTER",
+                payload: { filter: "completed" },
+              });
+            }}
           >
             Completed ({stats.completed})
           </button>
@@ -242,12 +248,12 @@ export default function TodoReducer() {
           <label>Sort:</label>
           <select
             value={state.sort}
-            onChange={(e) =>
+            onChange={(e) => {
               dispatch({
                 type: "SET_SORT",
                 payload: { sort: e.target.value as SortType },
-              })
-            }
+              });
+            }}
           >
             <option value="date-desc">Newest First</option>
             <option value="date-asc">Oldest First</option>
@@ -267,9 +273,9 @@ export default function TodoReducer() {
               type="checkbox"
               className={styles.checkbox}
               checked={todo.completed}
-              onChange={() =>
-                dispatch({ type: "TOGGLE_TODO", payload: { id: todo.id } })
-              }
+              onChange={() => {
+                dispatch({ type: "TOGGLE_TODO", payload: { id: todo.id } });
+              }}
             />
             <span className={styles.todoText}>{todo.text}</span>
             <span
@@ -280,9 +286,9 @@ export default function TodoReducer() {
             </span>
             <button
               className={styles.deleteButton}
-              onClick={() =>
-                dispatch({ type: "DELETE_TODO", payload: { id: todo.id } })
-              }
+              onClick={() => {
+                dispatch({ type: "DELETE_TODO", payload: { id: todo.id } });
+              }}
             >
               Delete
             </button>
@@ -298,10 +304,18 @@ export default function TodoReducer() {
 
       {state.todos.length > 0 && (
         <div className={styles.bulkActions}>
-          <button onClick={() => dispatch({ type: "COMPLETE_ALL" })}>
+          <button
+            onClick={() => {
+              dispatch({ type: "COMPLETE_ALL" });
+            }}
+          >
             Complete All
           </button>
-          <button onClick={() => dispatch({ type: "DELETE_COMPLETED" })}>
+          <button
+            onClick={() => {
+              dispatch({ type: "DELETE_COMPLETED" });
+            }}
+          >
             Delete Completed
           </button>
         </div>

@@ -35,4 +35,3 @@ Build a counter component that supports increment, decrement, and undo/redo func
 ## TypeScript Tips
 
 Consider creating an interface for your state structure that tracks both the current value and the history.
-

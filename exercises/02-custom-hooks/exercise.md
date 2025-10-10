@@ -15,7 +15,10 @@ Implement two commonly used custom hooks from scratch and create a demo componen
 Create a custom hook that syncs state with localStorage:
 
 ```typescript
-function useLocalStorage<T>(key: string, initialValue: T): [T, (value: T) => void]
+function useLocalStorage<T>(
+  key: string,
+  initialValue: T
+): [T, (value: T) => void];
 ```
 
 - Read from localStorage on mount
@@ -28,7 +31,7 @@ function useLocalStorage<T>(key: string, initialValue: T): [T, (value: T) => voi
 Create a custom hook that debounces a value:
 
 ```typescript
-function useDebounce<T>(value: T, delay: number): T
+function useDebounce<T>(value: T, delay: number): T;
 ```
 
 - Return the debounced value
@@ -38,6 +41,7 @@ function useDebounce<T>(value: T, delay: number): T
 ### Part 3: Demo Component
 
 Create a component that uses both hooks:
+
 - An input field with debounced search
 - The search term is saved to localStorage
 - Display both the immediate and debounced values
@@ -59,4 +63,3 @@ Create a component that uses both hooks:
 ## TypeScript Tips
 
 Use generics to make your hooks type-safe. Consider using `Dispatch<SetStateAction<T>>` for the setter to match useState's signature.
-

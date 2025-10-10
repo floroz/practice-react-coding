@@ -5,6 +5,7 @@ A curated collection of progressively challenging React exercises designed to he
 ## 🎯 Purpose
 
 This repository simulates real interview scenarios where you need to:
+
 - Solve practical React problems under time constraints
 - Demonstrate understanding of React APIs and patterns
 - Show proficiency with modern React 18/19 features
@@ -15,7 +16,7 @@ This repository simulates real interview scenarios where you need to:
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 
 ### Installation
@@ -36,15 +37,15 @@ The app will start at `http://localhost:5173`
 
 The repository contains **7 exercises** covering essential React concepts:
 
-| # | Exercise | Time | Difficulty | Concepts |
-|---|----------|------|------------|----------|
-| 1 | Counter with Undo/Redo | 15-20m | Easy | `useState`, state history |
-| 2 | Custom Hooks | 20-25m | Easy-Medium | `useEffect`, `useLocalStorage`, `useDebounce` |
-| 3 | Dynamic Form Builder | 25-30m | Medium | Controlled inputs, validation |
-| 4 | Data Fetching with Suspense | 30-35m | Medium | Suspense, Error Boundaries |
-| 5 | Search with useTransition | 30-35m | Medium | Concurrent features (React 18) |
-| 6 | Performance Optimization | 35-40m | Medium-Hard | `React.memo`, `useMemo`, `useCallback` |
-| 7 | Todo with useReducer | 40-45m | Medium-Hard | Complex state, discriminated unions |
+| #   | Exercise                    | Time   | Difficulty  | Concepts                                      |
+| --- | --------------------------- | ------ | ----------- | --------------------------------------------- |
+| 1   | Counter with Undo/Redo      | 15-20m | Easy        | `useState`, state history                     |
+| 2   | Custom Hooks                | 20-25m | Easy-Medium | `useEffect`, `useLocalStorage`, `useDebounce` |
+| 3   | Dynamic Form Builder        | 25-30m | Medium      | Controlled inputs, validation                 |
+| 4   | Data Fetching with Suspense | 30-35m | Medium      | Suspense, Error Boundaries                    |
+| 5   | Search with useTransition   | 30-35m | Medium      | Concurrent features (React 18)                |
+| 6   | Performance Optimization    | 35-40m | Medium-Hard | `React.memo`, `useMemo`, `useCallback`        |
+| 7   | Todo with useReducer        | 40-45m | Medium-Hard | Complex state, discriminated unions           |
 
 ## 🎓 How to Practice
 
@@ -58,10 +59,10 @@ The repository contains **7 exercises** covering essential React concepts:
 
 ```tsx
 // In src/App.tsx
-import CounterUndo from '../exercises/01-counter-undo/starter/CounterUndo'
+import CounterUndo from "../exercises/01-counter-undo/starter/CounterUndo";
 
 function App() {
-  return <CounterUndo />
+  return <CounterUndo />;
 }
 ```
 
@@ -129,6 +130,7 @@ practice-react-challenges/
 ## 🎯 What's NOT Covered
 
 This repository focuses on client-side React and intentionally excludes:
+
 - Next.js and React Server Components
 - Full application architecture
 - Backend/API development

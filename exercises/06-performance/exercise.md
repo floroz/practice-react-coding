@@ -32,6 +32,7 @@ You're given a slow component with unnecessary re-renders. Your task is to ident
 ## Scenario
 
 Build a dashboard with:
+
 - A counter that updates every second
 - A list of items (100+ items)
 - Each item has expensive formatting/calculations
@@ -60,8 +61,8 @@ Properly type memoized components and callbacks. Use `React.FC` or explicit typi
 ## Important Notes
 
 This exercise is about understanding:
+
 - WHY components re-render
 - WHEN to optimize (premature optimization is bad)
 - HOW to use optimization tools correctly
 - MEASURING impact of optimizations
-

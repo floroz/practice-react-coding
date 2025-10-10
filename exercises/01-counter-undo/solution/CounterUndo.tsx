@@ -27,8 +27,12 @@ export default function CounterUndo() {
     });
   };
 
-  const increment = () => updateCounter(present + 1);
-  const decrement = () => updateCounter(present - 1);
+  const increment = () => {
+    updateCounter(present + 1);
+  };
+  const decrement = () => {
+    updateCounter(present - 1);
+  };
 
   const undo = () => {
     if (!canUndo) return;

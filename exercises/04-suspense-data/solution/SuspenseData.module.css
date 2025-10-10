@@ -21,7 +21,8 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -61,7 +62,9 @@
   border-radius: 8px;
   margin-bottom: 1rem;
   border-left: 3px solid #646cff;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .userCard:hover {
@@ -95,4 +98,3 @@ button {
 button:hover {
   background-color: #535bf2;
 }
-

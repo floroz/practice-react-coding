@@ -10,7 +10,7 @@ function useLocalStorage<T>(
   const [storedValue, setStoredValue] = useState<T>(() => {
     try {
       const item = window.localStorage.getItem(key);
-      return item ? JSON.parse(item) : initialValue;
+      return item ? (JSON.parse(item) as T) : initialValue;
     } catch (error) {
       console.error("Error reading from localStorage:", error);
       return initialValue;
@@ -65,7 +65,9 @@ export default function CustomHooks() {
           id="search"
           type="text"
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+          }}
           placeholder="Type something..."
           className={styles.input}
         />

@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import styles from "./CustomHooks.module.css";
 
 // TODO: Implement useLocalStorage hook
-function useLocalStorage<T>(key: string, initialValue: T) {
+function useLocalStorage(key: string, initialValue: unknown) {
   // Your implementation here
 }
 
 // TODO: Implement useDebounce hook
-function useDebounce<T>(value: T, delay: number) {
+function useDebounce(value: unknown, delay: number) {
   // Your implementation here
 }
 

@@ -1,4 +1,5 @@
-import { Suspense, Component, ReactNode, useState } from "react";
+import { Suspense, Component, useState } from "react";
+import type { ReactNode } from "react";
 import styles from "./SuspenseData.module.css";
 
 interface User {
@@ -20,16 +21,17 @@ function createResource<T>(promise: Promise<T>) {
       status = "success";
       result = data;
     },
-    (err) => {
+    (err: unknown) => {
       status = "error";
-      error = err;
+      error = err instanceof Error ? err : new Error(String(err));
     }
   );
 
   return {
     read(): T {
       if (status === "pending") {
-        throw suspender; // Suspense catches this
+        // eslint-disable-next-line @typescript-eslint/only-throw-error
+        throw suspender; // Suspense catches this (must throw Promise)
       } else if (status === "error") {
         throw error; // ErrorBoundary catches this
       }
@@ -48,8 +50,12 @@ function fetchUsers(shouldFail = false): Promise<User[]> {
         // Using real API
         fetch("https://jsonplaceholder.typicode.com/users")
           .then((res) => res.json())
-          .then((data) => resolve(data))
-          .catch((err) => reject(err));
+          .then((data: unknown) => {
+            resolve(data as User[]);
+          })
+          .catch((err: unknown) => {
+            reject(err instanceof Error ? err : new Error(String(err)));
+          });
       }
     }, 1500);
   });

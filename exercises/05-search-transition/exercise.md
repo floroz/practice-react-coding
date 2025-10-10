@@ -21,6 +21,7 @@ Build a search interface that filters a large list without blocking the UI. This
 ## Data Structure
 
 Generate items with:
+
 - ID
 - Name
 - Category
@@ -51,12 +52,13 @@ Properly type the transition state and deferred values. Consider creating a cust
 ## Key Concepts
 
 **useTransition**: Allows you to mark state updates as transitions (non-urgent)
+
 - Returns `[isPending, startTransition]`
 - Updates inside `startTransition` can be interrupted
 - Great for CPU-intensive updates
 
 **useDeferredValue**: Creates a deferred version of a value
+
 - Returns a value that "lags behind" the latest value
 - Automatically deprioritized during urgent updates
 - Great for values passed to expensive child components
-

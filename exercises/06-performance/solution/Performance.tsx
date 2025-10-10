@@ -20,7 +20,9 @@ const Counter = memo(function Counter() {
     const interval = setInterval(() => {
       setCount((c) => c + 1);
     }, 1000);
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   return (
@@ -57,7 +59,13 @@ function ItemUnoptimized({ id, value, onDelete }: ItemProps) {
         <span className={styles.renderCount}>
           Renders: {renderCount.current}
         </span>
-        <button onClick={() => onDelete(id)}>Delete</button>
+        <button
+          onClick={() => {
+            onDelete(id);
+          }}
+        >
+          Delete
+        </button>
       </div>
     </div>
   );
@@ -80,7 +88,13 @@ const ItemOptimized = memo(function Item({ id, value, onDelete }: ItemProps) {
         <span className={styles.renderCount}>
           Renders: {renderCount.current}
         </span>
-        <button onClick={() => onDelete(id)}>Delete</button>
+        <button
+          onClick={() => {
+            onDelete(id);
+          }}
+        >
+          Delete
+        </button>
       </div>
     </div>
   );
@@ -156,9 +170,15 @@ export default function Performance() {
           type="text"
           placeholder="Filter items..."
           value={filter}
-          onChange={(e) => setFilter(e.target.value)}
+          onChange={(e) => {
+            setFilter(e.target.value);
+          }}
         />
-        <button onClick={() => setOptimized(!optimized)}>
+        <button
+          onClick={() => {
+            setOptimized(!optimized);
+          }}
+        >
           {optimized ? "❌ Disable" : "✅ Enable"} Optimization
         </button>
       </div>

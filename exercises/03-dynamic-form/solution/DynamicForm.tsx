@@ -23,7 +23,7 @@ export default function DynamicForm() {
 
   const addField = () => {
     const newField: FormField = {
-      id: `${formId}-${Date.now()}`,
+      id: `${formId}-${String(Date.now())}`,
       label: "",
       value: "",
       type: "text",
@@ -89,12 +89,12 @@ export default function DynamicForm() {
     }
 
     // Create submitted data object
-    const data = validatedFields.reduce(
+    const data = validatedFields.reduce<Record<string, string>>(
       (acc, field) => {
         acc[field.label] = field.value;
         return acc;
       },
-      {} as Record<string, string>
+      {}
     );
 
     setSubmittedData(data);
@@ -104,7 +104,7 @@ export default function DynamicForm() {
     <div className={styles.container}>
       <h2>Dynamic Form Builder</h2>
       <form className={styles.form} onSubmit={handleSubmit}>
-        {fields.map((field, index) => (
+        {fields.map((field) => (
           <div
             key={field.id}
             className={`${styles.field} ${field.error ? styles.error : ""}`}
@@ -114,15 +114,15 @@ export default function DynamicForm() {
                 type="text"
                 placeholder="Field Label"
                 value={field.label}
-                onChange={(e) =>
-                  updateField(field.id, { label: e.target.value })
-                }
+                onChange={(e) => {
+                  updateField(field.id, { label: e.target.value });
+                }}
               />
               <select
                 value={field.type}
-                onChange={(e) =>
-                  updateField(field.id, { type: e.target.value as FieldType })
-                }
+                onChange={(e) => {
+                  updateField(field.id, { type: e.target.value as FieldType });
+                }}
               >
                 <option value="text">Text</option>
                 <option value="email">Email</option>
@@ -132,7 +132,9 @@ export default function DynamicForm() {
                 <button
                   type="button"
                   className={styles.danger}
-                  onClick={() => removeField(field.id)}
+                  onClick={() => {
+                    removeField(field.id);
+                  }}
                 >
                   Remove
                 </button>
@@ -143,9 +145,9 @@ export default function DynamicForm() {
                 type={field.type}
                 placeholder={`Enter ${field.label || "value"}`}
                 value={field.value}
-                onChange={(e) =>
-                  updateField(field.id, { value: e.target.value })
-                }
+                onChange={(e) => {
+                  updateField(field.id, { value: e.target.value });
+                }}
               />
             </div>
             {field.error && (

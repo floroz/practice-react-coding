@@ -23,6 +23,7 @@ Build a data fetching component that uses React 18's Suspense for handling loadi
 Use JSONPlaceholder: `https://jsonplaceholder.typicode.com/users`
 
 Or create a mock API that:
+
 - Randomly succeeds/fails (for testing error states)
 - Has configurable delay (for testing loading states)
 
@@ -48,4 +49,3 @@ Create proper types for your API response. Handle the case where the Promise mig
 ## Important Note
 
 React 18's Suspense for data fetching requires a special integration. For this exercise, you'll implement a simple resource wrapper that Suspense can work with. In production, you'd use libraries like React Query or SWR with Suspense support.
-

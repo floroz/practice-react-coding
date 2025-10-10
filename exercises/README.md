@@ -21,6 +21,7 @@ Each exercise folder contains:
 ## Exercises Overview
 
 ### 1. Counter with Undo/Redo (15-20 min)
+
 **Concepts**: `useState`, basic state management, array operations
 
 Build a counter with increment, decrement, and undo/redo functionality. Tests understanding of maintaining state history.
@@ -30,6 +31,7 @@ Build a counter with increment, decrement, and undo/redo functionality. Tests un
 ---
 
 ### 2. Custom Hooks (20-25 min)
+
 **Concepts**: Custom hooks, `useEffect`, `localStorage`, `useId`
 
 Implement `useLocalStorage` and `useDebounce` custom hooks from scratch and create a demo component using both.
@@ -39,6 +41,7 @@ Implement `useLocalStorage` and `useDebounce` custom hooks from scratch and crea
 ---
 
 ### 3. Dynamic Form Builder (25-30 min)
+
 **Concepts**: Controlled inputs, dynamic rendering, form validation
 
 Build a form builder that allows adding/removing fields dynamically with different field types and validation.
@@ -48,6 +51,7 @@ Build a form builder that allows adding/removing fields dynamically with differe
 ---
 
 ### 4. Data Fetching with Suspense (30-35 min)
+
 **Concepts**: Suspense, Error Boundaries, data fetching patterns (React 18)
 
 Implement data fetching with Suspense for loading states and Error Boundaries for error handling.
@@ -57,6 +61,7 @@ Implement data fetching with Suspense for loading states and Error Boundaries fo
 ---
 
 ### 5. Search with useTransition (30-35 min)
+
 **Concepts**: `useTransition`, `useDeferredValue` (React 18 concurrent features)
 
 Build a search interface that filters a large list (8,000+ items) without blocking the UI.
@@ -66,6 +71,7 @@ Build a search interface that filters a large list (8,000+ items) without blocki
 ---
 
 ### 6. Performance Optimization (35-40 min)
+
 **Concepts**: `React.memo`, `useMemo`, `useCallback`, performance profiling
 
 Optimize a slow component with unnecessary re-renders using React's performance tools.
@@ -75,6 +81,7 @@ Optimize a slow component with unnecessary re-renders using React's performance 
 ---
 
 ### 7. Todo App with useReducer (40-45 min)
+
 **Concepts**: `useReducer`, complex state logic, TypeScript discriminated unions
 
 Build a feature-rich todo app with filtering, sorting, bulk operations, and persistence using `useReducer`.
@@ -127,4 +134,3 @@ After completing these exercises:
 5. Time yourself and track improvement
 
 Good luck with your interviews! 🚀
-
