@@ -1,17 +1,20 @@
 import "./App.css";
 
 // Import exercises - uncomment the one you want to practice
-// import CounterUndo from '../exercises/01-counter-undo/starter/CounterUndo'
+// import CounterUndo from "../exercises/01-counter-undo/starter/CounterUndo";
 // import CounterUndo from '../exercises/01-counter-undo/solution/CounterUndo'
 
-// import CustomHooks from '../exercises/02-custom-hooks/starter/CustomHooks'
-// import CustomHooks from '../exercises/02-custom-hooks/solution/CustomHooks'
+// import CustomHooks from "../exercises/02-custom-hooks/starter/CustomHooks";
+// import CustomHooks from "../exercises/02-custom-hooks/solution/CustomHooks";
 
-// import DynamicForm from '../exercises/03-dynamic-form/starter/DynamicForm'
+// import DynamicForm from "../exercises/03-dynamic-form/starter/DynamicForm";
 // import DynamicForm from '../exercises/03-dynamic-form/solution/DynamicForm'
 
-// import SuspenseData from '../exercises/04-suspense-data/starter/SuspenseData'
+// import SuspenseData from "../exercises/04-suspense-data/starter/SuspenseData";
 // import SuspenseData from '../exercises/04-suspense-data/solution/SuspenseData'
+
+// import SuspenseData2 from "../exercises/04b-suspended-transitions/starter/SuspendedTransitions";
+// import SuspenseData2 from '../exercises/04b-suspended-transitions/solution/SuspendedTransitions'
 
 // import SearchTransition from '../exercises/05-search-transition/starter/SearchTransition'
 // import SearchTransition from '../exercises/05-search-transition/solution/SearchTransition'
