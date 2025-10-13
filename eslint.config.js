@@ -6,6 +6,7 @@ import tseslint from "typescript-eslint";
 import { defineConfig, globalIgnores } from "eslint/config";
 import reactX from "eslint-plugin-react-x";
 import reactDom from "eslint-plugin-react-dom";
+import reactCompiler from "eslint-plugin-react-compiler";
 
 export default defineConfig([
   globalIgnores(["dist"]),
@@ -26,6 +27,8 @@ export default defineConfig([
       reactX.configs["recommended-typescript"],
       // Enable lint rules for React DOM
       reactDom.configs.recommended,
+      // React Compiler
+      reactCompiler.configs.recommended,
     ],
     languageOptions: {
       ecmaVersion: 2020,
@@ -49,6 +52,7 @@ export default defineConfig([
       "@typescript-eslint/no-non-null-assertion": "off",
       // Make button type warnings instead of errors
       "react-dom/no-missing-button-type": "warn",
+      "react-compiler/react-compiler": "error",
     },
   },
   // Relax rules for starter files
