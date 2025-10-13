@@ -1,3 +1,4 @@
+/* eslint-disable react-x/no-array-index-key */
 import { useState, useTransition, useMemo } from "react";
 import styles from "./SearchTransition.module.css";
 
