@@ -1,6 +1,6 @@
 # React Interview Practice Exercises
 
-This directory contains 7 progressively challenging React exercises designed to help you prepare for technical interviews. Each exercise covers important React concepts and patterns commonly tested in live coding challenges.
+This directory contains progressively challenging React exercises designed to help you prepare for technical interviews. Each exercise covers important React concepts and patterns commonly tested in live coding challenges.
 
 ## Structure
 
@@ -87,6 +87,18 @@ Optimize a slow component with unnecessary re-renders using React's performance 
 Build a feature-rich todo app with filtering, sorting, bulk operations, and persistence using `useReducer`.
 
 **Key Skills**: Complex state management, discriminated unions, localStorage persistence
+
+---
+
+### 8. Canvas Rendering Engine (2-3 hours)
+
+**Concepts**: Canvas 2D API, coordinate transforms, event handling, rendering architecture
+
+Build a minimal Photoshop-like editor with text manipulation, background editing, blur effects, crop tool, and PNG export. This is a deep-dive learning exercise focused on understanding Canvas fundamentals.
+
+**Key Skills**: Canvas API, layer systems, hit testing, transforms, image processing, export
+
+**Note**: This exercise has no solution code - it's designed for learning by doing with comprehensive guidance.
 
 ## Tips for Interview Practice
 
