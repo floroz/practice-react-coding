@@ -9,13 +9,13 @@
 }
 
 .subtitle {
-  color: #888;
+  color: #666;
   margin-top: 0.5rem;
 }
 
 .info {
-  background: linear-gradient(135deg, #1a3a52 0%, #1a1a2e 100%);
-  border: 1px solid #2a4a62;
+  background: #e8f4f8;
+  border: 1px solid #b8dce8;
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 2rem;
@@ -23,14 +23,14 @@
 
 .info h3 {
   margin-top: 0;
-  color: #4db8ff;
+  color: #2980b9;
   font-size: 1rem;
 }
 
 .info ul {
   margin: 0.5rem 0 0 0;
   padding-left: 1.5rem;
-  color: #bbb;
+  color: #555;
   font-size: 0.9rem;
 }
 
@@ -45,8 +45,8 @@
 }
 
 .column {
-  background: #1a1a1a;
-  border: 2px solid #333;
+  background: #f8f8f8;
+  border: 2px solid #ddd;
   border-radius: 8px;
   padding: 1rem;
   min-height: 500px;
@@ -56,8 +56,8 @@
 }
 
 .column.dropTarget {
-  border-color: #0066cc;
-  background: rgba(0, 102, 204, 0.05);
+  border-color: #3498db;
+  background: #e8f4f8;
 }
 
 .columnHeader {
@@ -66,22 +66,23 @@
   align-items: center;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #ddd;
 }
 
 .columnHeader h3 {
   margin: 0;
-  color: #fff;
+  color: #333;
   font-size: 1.1rem;
 }
 
 .count {
-  background: #2a2a2a;
-  color: #888;
+  background: #fff;
+  color: #999;
   padding: 0.3rem 0.75rem;
   border-radius: 12px;
   font-size: 0.85rem;
   font-weight: 600;
+  border: 1px solid #eee;
 }
 
 .columnContent {
@@ -94,8 +95,8 @@
 }
 
 .item {
-  background: #222;
-  border: 1px solid #444;
+  background: #fff;
+  border: 1px solid #ddd;
   border-radius: 6px;
   padding: 1rem;
   cursor: move;
@@ -104,11 +105,12 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .item:hover {
-  border-color: #555;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-color: #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .item.dragging {
@@ -123,14 +125,14 @@
 
 .itemTitle {
   margin: 0 0 0.5rem 0;
-  color: #fff;
+  color: #333;
   font-size: 0.95rem;
   font-weight: 500;
 }
 
 .itemDescription {
   margin: 0;
-  color: #aaa;
+  color: #666;
   font-size: 0.85rem;
   line-height: 1.4;
 }
@@ -138,7 +140,7 @@
 .deleteButton {
   background: transparent;
   border: none;
-  color: #888;
+  color: #999;
   font-size: 1.1rem;
   width: 24px;
   height: 24px;
@@ -152,15 +154,15 @@
 }
 
 .deleteButton:hover {
-  background: #ff4444;
+  background: #e74c3c;
   color: white;
 }
 
 .placeholder {
   height: 60px;
-  border: 2px dashed #0066cc;
+  border: 2px dashed #3498db;
   border-radius: 6px;
-  background: rgba(0, 102, 204, 0.1);
+  background: #e8f4f8;
   animation: pulse 1s ease-in-out infinite;
 }
 
@@ -176,13 +178,13 @@
 
 .emptyPlaceholder {
   height: 100px;
-  border: 2px dashed #0066cc;
+  border: 2px dashed #3498db;
   border-radius: 6px;
-  background: rgba(0, 102, 204, 0.1);
+  background: #e8f4f8;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0066cc;
+  color: #3498db;
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -190,8 +192,8 @@
 .addButton {
   width: 100%;
   background: transparent;
-  border: 1px dashed #444;
-  color: #888;
+  border: 1px dashed #ddd;
+  color: #999;
   padding: 0.75rem;
   border-radius: 6px;
   cursor: pointer;
@@ -200,14 +202,14 @@
 }
 
 .addButton:hover {
-  border-color: #0066cc;
-  color: #0066cc;
-  background: rgba(0, 102, 204, 0.05);
+  border-color: #3498db;
+  color: #3498db;
+  background: #e8f4f8;
 }
 
 .addForm {
-  background: #222;
-  border: 1px solid #444;
+  background: #fff;
+  border: 1px solid #ddd;
   border-radius: 6px;
   padding: 1rem;
 }
@@ -215,9 +217,9 @@
 .addInput,
 .addTextarea {
   width: 100%;
-  background: #1a1a1a;
-  border: 1px solid #444;
-  color: #fff;
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #333;
   padding: 0.6rem;
   border-radius: 4px;
   font-size: 0.9rem;
@@ -228,7 +230,7 @@
 .addInput:focus,
 .addTextarea:focus {
   outline: none;
-  border-color: #0066cc;
+  border-color: #3498db;
 }
 
 .addTextarea {
@@ -242,7 +244,7 @@
 }
 
 .addSubmit {
-  background: #0066cc;
+  background: #3498db;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -253,13 +255,13 @@
 }
 
 .addSubmit:hover {
-  background: #0052a3;
+  background: #2980b9;
 }
 
 .addCancel {
   background: transparent;
-  color: #888;
-  border: 1px solid #444;
+  color: #999;
+  border: 1px solid #ddd;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
@@ -268,9 +270,9 @@
 }
 
 .addCancel:hover {
-  background: #2a2a2a;
-  border-color: #555;
-  color: #fff;
+  background: #f8f8f8;
+  border-color: #ccc;
+  color: #333;
 }
 
 /* Responsive */
@@ -283,4 +285,3 @@
     min-height: 300px;
   }
 }
-

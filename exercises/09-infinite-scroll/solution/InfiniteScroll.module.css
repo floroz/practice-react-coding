@@ -9,7 +9,7 @@
 }
 
 .subtitle {
-  color: #888;
+  color: #666;
   margin-top: 0.5rem;
 }
 
@@ -17,17 +17,17 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: #aaa;
+  color: #666;
   font-size: 0.9rem;
   margin-bottom: 1.5rem;
   padding: 0.75rem 1rem;
-  background: #1a1a1a;
+  background: #f8f8f8;
   border-radius: 6px;
-  border: 1px solid #333;
+  border: 1px solid #eee;
 }
 
 .badge {
-  background: #0066cc;
+  background: #3498db;
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
@@ -44,12 +44,13 @@
 .item {
   display: flex;
   gap: 1.5rem;
-  background: #1a1a1a;
-  border: 1px solid #333;
+  background: #fff;
+  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem;
   transition: border-color 0.2s;
   animation: fadeIn 0.3s ease-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes fadeIn {
@@ -64,7 +65,7 @@
 }
 
 .item:hover {
-  border-color: #444;
+  border-color: #ccc;
 }
 
 .image {
@@ -73,7 +74,7 @@
   object-fit: cover;
   border-radius: 6px;
   flex-shrink: 0;
-  background: #222;
+  background: #f0f0f0;
 }
 
 .content {
@@ -86,18 +87,18 @@
 .title {
   font-size: 1.1rem;
   margin: 0;
-  color: #fff;
+  color: #333;
 }
 
 .description {
-  color: #aaa;
+  color: #666;
   margin: 0;
   line-height: 1.5;
   flex: 1;
 }
 
 .time {
-  color: #666;
+  color: #999;
   font-size: 0.85rem;
 }
 
@@ -112,14 +113,14 @@
   align-items: center;
   gap: 1rem;
   padding: 2rem;
-  color: #888;
+  color: #666;
 }
 
 .spinner {
   width: 40px;
   height: 40px;
-  border: 3px solid #333;
-  border-top-color: #0066cc;
+  border: 3px solid #eee;
+  border-top-color: #3498db;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -136,10 +137,10 @@
   align-items: center;
   gap: 1rem;
   padding: 2rem;
-  background: rgba(255, 68, 68, 0.1);
-  border: 1px solid #ff4444;
+  background: #fee;
+  border: 1px solid #fcc;
   border-radius: 8px;
-  color: #ff4444;
+  color: #c33;
 }
 
 .error p {
@@ -147,7 +148,7 @@
 }
 
 .retryButton {
-  background: #ff4444;
+  background: #e74c3c;
   color: white;
   border: none;
   padding: 0.5rem 1.5rem;
@@ -158,13 +159,13 @@
 }
 
 .retryButton:hover {
-  background: #ff2222;
+  background: #c0392b;
 }
 
 .endMessage {
   text-align: center;
   padding: 2rem;
-  color: #888;
+  color: #666;
   font-size: 1.1rem;
 }
 
@@ -175,7 +176,7 @@
 .empty {
   text-align: center;
   padding: 4rem 2rem;
-  color: #666;
+  color: #999;
 }
 
 .empty p {
@@ -193,4 +194,3 @@
     height: 200px;
   }
 }
-

@@ -9,13 +9,13 @@
 }
 
 .subtitle {
-  color: #888;
+  color: #666;
   margin-top: 0.5rem;
 }
 
 .info {
-  background: linear-gradient(135deg, #1a3a52 0%, #1a1a2e 100%);
-  border: 1px solid #2a4a62;
+  background: #e8f4f8;
+  border: 1px solid #b8dce8;
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 2rem;
@@ -23,14 +23,14 @@
 
 .info h3 {
   margin-top: 0;
-  color: #4db8ff;
+  color: #2980b9;
   font-size: 1rem;
 }
 
 .info ul {
   margin: 0.5rem 0 0 0;
   padding-left: 1.5rem;
-  color: #bbb;
+  color: #555;
   font-size: 0.9rem;
 }
 
@@ -51,16 +51,16 @@
   width: 100%;
   padding: 1rem 3rem 1rem 1rem;
   font-size: 1rem;
-  background: #1a1a1a;
-  border: 2px solid #333;
+  background: #fff;
+  border: 2px solid #ddd;
   border-radius: 8px;
-  color: #fff;
+  color: #333;
   transition: border-color 0.2s;
 }
 
 .input:focus {
   outline: none;
-  border-color: #0066cc;
+  border-color: #3498db;
 }
 
 .loadingSpinner {
@@ -75,8 +75,8 @@
 .spinner {
   width: 20px;
   height: 20px;
-  border: 2px solid #333;
-  border-top-color: #0066cc;
+  border: 2px solid #eee;
+  border-top-color: #3498db;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -94,7 +94,7 @@
   transform: translateY(-50%);
   background: transparent;
   border: none;
-  color: #888;
+  color: #999;
   font-size: 1.25rem;
   width: 32px;
   height: 32px;
@@ -107,8 +107,8 @@
 }
 
 .clearButton:hover {
-  background: #2a2a2a;
-  color: #fff;
+  background: #f0f0f0;
+  color: #333;
 }
 
 .results {
@@ -117,13 +117,13 @@
   left: 0;
   right: 0;
   margin-top: 0.5rem;
-  background: #1a1a1a;
-  border: 2px solid #333;
+  background: #fff;
+  border: 2px solid #ddd;
   border-radius: 8px;
   max-height: 400px;
   overflow-y: auto;
   z-index: 100;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   animation: slideDown 0.2s ease-out;
 }
 
@@ -144,12 +144,12 @@
   align-items: center;
   gap: 1rem;
   padding: 2rem;
-  color: #ff4444;
+  color: #e74c3c;
   text-align: center;
 }
 
 .retryButton {
-  background: #ff4444;
+  background: #e74c3c;
   color: white;
   border: none;
   padding: 0.5rem 1.5rem;
@@ -160,17 +160,17 @@
 }
 
 .retryButton:hover {
-  background: #ff2222;
+  background: #c0392b;
 }
 
 .noResults {
   padding: 2rem;
   text-align: center;
-  color: #888;
+  color: #999;
 }
 
 .noResults strong {
-  color: #fff;
+  color: #333;
 }
 
 .resultsList {
@@ -195,12 +195,13 @@
 
 .resultItem:hover,
 .resultItem.selected {
-  background: #2a2a2a;
-  border-color: #444;
+  background: #f8f8f8;
+  border-color: #ddd;
 }
 
 .resultItem.selected {
-  border-color: #0066cc;
+  border-color: #3498db;
+  background: #e8f4f8;
 }
 
 .resultContent {
@@ -211,13 +212,13 @@
 .resultTitle {
   font-size: 1rem;
   font-weight: 500;
-  color: #fff;
+  color: #333;
   margin-bottom: 0.25rem;
 }
 
 .resultDescription {
   font-size: 0.85rem;
-  color: #aaa;
+  color: #666;
   line-height: 1.4;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -226,29 +227,29 @@
 
 .resultCategory {
   flex-shrink: 0;
-  background: #2a2a2a;
-  color: #4db8ff;
+  background: #f8f8f8;
+  color: #3498db;
   padding: 0.3rem 0.75rem;
   border-radius: 12px;
   font-size: 0.75rem;
   font-weight: 500;
-  border: 1px solid #3a4a5a;
+  border: 1px solid #e8f4f8;
 }
 
 .highlight {
-  background: #ffa500;
-  color: #000;
+  background: #fef5e7;
+  color: #d68910;
   padding: 0.1rem 0.2rem;
   border-radius: 3px;
   font-weight: 600;
 }
 
 .hint {
-  background: rgba(255, 165, 0, 0.1);
-  border: 1px solid rgba(255, 165, 0, 0.3);
+  background: #fef5e7;
+  border: 1px solid #f9e79f;
   border-radius: 8px;
   padding: 1rem;
-  color: #ffa500;
+  color: #d68910;
   font-size: 0.9rem;
   text-align: center;
 }
@@ -259,16 +260,16 @@
 }
 
 .results::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #f8f8f8;
 }
 
 .results::-webkit-scrollbar-thumb {
-  background: #444;
+  background: #ddd;
   border-radius: 4px;
 }
 
 .results::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #ccc;
 }
 
 /* Responsive */
@@ -286,4 +287,3 @@
     align-self: flex-start;
   }
 }
-

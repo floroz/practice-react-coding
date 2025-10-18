@@ -5,7 +5,7 @@
 }
 
 .subtitle {
-  color: #888;
+  color: #666;
   margin-bottom: 2rem;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .button {
-  background: #0066cc;
+  background: #3498db;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -27,14 +27,14 @@
 }
 
 .button:hover {
-  background: #0052a3;
+  background: #2980b9;
 }
 
 /* Modal styles - TODO: Implement these */
 .backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,12 +42,13 @@
 }
 
 .modal {
-  background: #1a1a1a;
+  background: #fff;
   border-radius: 8px;
   max-width: 500px;
   width: 90%;
   max-height: 90vh;
   overflow: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
 .header {
@@ -55,10 +56,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #eee;
 }
 
 .content {
   padding: 1.5rem;
 }
-

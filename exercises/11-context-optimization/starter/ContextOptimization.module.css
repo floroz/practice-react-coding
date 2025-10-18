@@ -5,21 +5,21 @@
 }
 
 .subtitle {
-  color: #888;
+  color: #666;
   margin-bottom: 2rem;
 }
 
 .header {
-  background: #1a1a1a;
-  border: 1px solid #333;
+  background: #f8f8f8;
+  border: 1px solid #eee;
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .section {
-  background: #1a1a1a;
-  border: 1px solid #333;
+  background: #f8f8f8;
+  border: 1px solid #eee;
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
@@ -27,8 +27,7 @@
 
 .section h3 {
   margin-top: 0;
-  color: #fff;
+  color: #333;
 }
 
 /* Add your styles here */
-
