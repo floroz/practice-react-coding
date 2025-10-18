@@ -16,14 +16,38 @@ import "./App.css";
 // import SuspenseData2 from "../exercises/04b-suspended-transitions/starter/SuspendedTransitions";
 // import SuspenseData2 from '../exercises/04b-suspended-transitions/solution/SuspendedTransitions'
 
-// import SearchTransition from '../exercises/05-search-transition/starter/SearchTransition'
+// import SearchTransition from "../exercises/05-search-transition/starter/SearchTransition";
 // import SearchTransition from '../exercises/05-search-transition/solution/SearchTransition'
 
-// import Performance from '../exercises/06-performance/starter/Performance'
+// import Performance from "../exercises/06-performance/starter/Performance";
 // import Performance from '../exercises/06-performance/solution/Performance'
+// import Performance from "../exercises/06-performance/compiler/Performance";
+// import Performance from "../exercises/06-performance/compiler-friendly/Performance";
+// import Performance from "../exercises/06-performance/compiler/PerformanceModular";
+// import Performance from "../exercises/06-performance/compiler/PerformancePure";
 
-// import TodoReducer from '../exercises/07-todo-reducer/starter/TodoReducer'
+// import TodoReducer from "../exercises/07-todo-reducer/starter/TodoReducer";
 // import TodoReducer from '../exercises/07-todo-reducer/solution/TodoReducer'
+
+// import OptimisticUpdates from "../exercises/08-optimistic-updates/starter/OptimisticUpdates";
+// import OptimisticUpdates from "../exercises/08-optimistic-updates/solution/OptimisticUpdates";
+
+// import InfiniteScroll from "../exercises/09-infinite-scroll/starter/InfiniteScroll";
+// import InfiniteScroll from "../exercises/09-infinite-scroll/solution/InfiniteScroll";
+
+// import ModalManager from "../exercises/10-modal-manager/starter/ModalManager";
+// import ModalManager from "../exercises/10-modal-manager/solution/ModalManager";
+
+// import ContextOptimization from "../exercises/11-context-optimization/starter/ContextOptimization";
+// import ContextOptimization from "../exercises/11-context-optimization/solution/ContextOptimization";
+
+// import Autocomplete from "../exercises/12-autocomplete/starter/Autocomplete";
+// import Autocomplete from "../exercises/12-autocomplete/solution/Autocomplete";
+
+// import DragDrop from "../exercises/13-drag-drop/starter/DragDrop";
+// import DragDrop from "../exercises/13-drag-drop/solution/DragDrop";
+
+// import CanvasRenderer from '../exercises/08-canvas-renderer/starter/CanvasRenderer'
 
 function App() {
   return (
@@ -92,6 +116,30 @@ function App() {
               <li>
                 <strong>Todo with useReducer</strong> - Complex state,
                 TypeScript
+              </li>
+              <li>
+                <strong>Optimistic UI Updates</strong> - Optimistic updates,
+                async actions, error rollback
+              </li>
+              <li>
+                <strong>Infinite Scroll</strong> - Intersection Observer,
+                virtualization, lazy loading
+              </li>
+              <li>
+                <strong>Modal Manager</strong> - Portals, focus trap, keyboard
+                navigation, a11y
+              </li>
+              <li>
+                <strong>Context Optimization</strong> - Context API,
+                performance, memoization
+              </li>
+              <li>
+                <strong>Autocomplete Search</strong> - Debouncing,
+                useTransition, race conditions
+              </li>
+              <li>
+                <strong>Drag and Drop Board</strong> - Drag & Drop API,
+                useReducer, complex state
               </li>
             </ol>
           </div>

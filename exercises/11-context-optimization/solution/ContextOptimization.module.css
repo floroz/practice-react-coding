@@ -1,0 +1,289 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.pageHeader {
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+.info {
+  background: linear-gradient(135deg, #1a3a52 0%, #1a1a2e 100%);
+  border: 1px solid #2a4a62;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.info h3 {
+  margin-top: 0;
+  color: #4db8ff;
+  font-size: 1rem;
+}
+
+.info ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  color: #bbb;
+}
+
+.info li {
+  margin: 0.5rem 0;
+}
+
+.instruction {
+  margin: 1rem 0 0 0;
+  color: #ffa500;
+  font-weight: 500;
+}
+
+.header {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerContent h3 {
+  margin: 0 0 0.5rem 0;
+  color: #fff;
+}
+
+.badge {
+  display: inline-block;
+  background: #0066cc;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.section {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sectionHeader h3 {
+  margin: 0;
+  color: #fff;
+}
+
+.renderBadge {
+  background: #2a2a2a;
+  color: #4db8ff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid #444;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.control label {
+  min-width: 120px;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #0052a3;
+}
+
+.buttonSecondary {
+  background: transparent;
+  color: #aaa;
+  border: 1px solid #555;
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.buttonSecondary:hover {
+  background: #2a2a2a;
+  color: #fff;
+  border-color: #666;
+}
+
+.colorPicker {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.colorInput {
+  width: 60px;
+  height: 40px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.slider {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: #333;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #0066cc;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #0066cc;
+  cursor: pointer;
+  border: none;
+}
+
+.editContainer {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.input {
+  flex: 1;
+  background: #222;
+  border: 1px solid #444;
+  color: #ddd;
+  padding: 0.6rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.nameDisplay {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nameDisplay span {
+  color: #fff;
+  font-weight: 500;
+}
+
+.roleBadge {
+  background: #2a2a2a;
+  color: #4ecb71;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  border: 1px solid #3a5a3a;
+  text-transform: capitalize;
+}
+
+.note {
+  color: #ffa500;
+  background: rgba(255, 165, 0, 0.1);
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 165, 0, 0.3);
+  margin: 0 0 1rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.gridItem {
+  background: #222;
+  border: 1px solid #444;
+  padding: 1.5rem;
+  border-radius: 6px;
+  text-align: center;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .control {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .control label {
+    min-width: auto;
+  }
+
+  .editContainer {
+    flex-direction: column;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+

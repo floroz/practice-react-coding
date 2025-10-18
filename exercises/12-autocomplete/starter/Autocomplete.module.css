@@ -1,0 +1,34 @@
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.searchBox {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 8px;
+  color: #fff;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+/* Add your styles here */
+
